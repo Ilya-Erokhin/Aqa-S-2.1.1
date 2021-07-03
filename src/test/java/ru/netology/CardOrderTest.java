@@ -34,6 +34,7 @@ class CardOrderTest {
     @Test
     void shouldTestFieldName() {
         $("[data-test-id=name] input").setValue("Erokhin Ilya");
+        $("[data-test-id=name].input_invalid .input__sub");
         $("[data-test-id=phone] input").setValue("+79670100000");
         $("[data-test-id=agreement]").click();
         $("[type='button']").click();
